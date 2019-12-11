@@ -50,6 +50,7 @@ export default class App extends React.Component {
       console.log(e)
       alert(JSON.stringify(e,null,2))
     }
+    alert('Ansible should be updated')
   }
 
   async updateChef(){
@@ -63,6 +64,7 @@ export default class App extends React.Component {
       console.log(e)
       alert(JSON.stringify(e,null,2))
     }
+    alert('Chef should be updated')
   }
 
   render() {
