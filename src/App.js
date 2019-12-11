@@ -50,7 +50,9 @@ export default class App extends React.Component {
       console.log(e)
       alert(JSON.stringify(e,null,2))
     }
-    alert('Ansible should be updated')
+    setTimeout(5000, () => {
+      alert('Ansible should be updated')
+    })
   }
 
   async updateChef(){
@@ -85,7 +87,7 @@ export default class App extends React.Component {
             <button onClick={this.clickMe}>Update Message</button>
           </div>
           <div>
-            <button onClick={this.updateChef}>Update through Chef</button>
+      {/*<button onClick={this.updateChef}>Update through Chef</button>*/}
             <button onClick={this.updateAnsible}>Update through Ansible</button>
           </div>
         </header>
